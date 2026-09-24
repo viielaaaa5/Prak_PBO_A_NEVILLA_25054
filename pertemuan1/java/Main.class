@@ -1,0 +1,19 @@
+// Source code is decompiled from a .class file using FernFlower decompiler (from Intellij IDEA).
+public class Main {
+   public Main() {
+   }
+
+   public static void main(String[] var0) {
+      RekeningBank var1 = new RekeningBank("123456789", "Nevilla Ghilar Apryanti", (double)1000000.0F);
+      System.out.println("=== DATA REKENING ===");
+      System.out.println("Nomor Rekening : " + var1.getNomorRekening());
+      System.out.println("Pemilik        : " + var1.getPemilikRekening());
+      System.out.println("Saldo Awal     : Rp" + var1.getSaldo());
+      var1.setor((double)500000.0F);
+      System.out.println("\nSetelah setor Rp500000:");
+      System.out.println("Saldo          : Rp" + var1.getSaldo());
+      var1.tarik((double)250000.0F);
+      System.out.println("\nSetelah tarik Rp250000:");
+      System.out.println("Saldo          : Rp" + var1.getSaldo());
+   }
+}
