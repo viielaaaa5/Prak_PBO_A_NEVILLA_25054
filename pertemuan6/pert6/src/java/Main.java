@@ -17,7 +17,6 @@ public class Main {
 
     public static void main(String[] args) {
         Mobil mobil = new Mobil("Toyota Avanza", 2022, 45);
-        
         Sepeda sepeda = new Sepeda ("Polygon", 2023);
 
         System.out.println("=== Semua Movable ===");
